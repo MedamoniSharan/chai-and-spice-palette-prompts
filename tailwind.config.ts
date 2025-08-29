@@ -52,6 +52,30 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				// Chai Cafe Color Palettes
+				'gentle-breeze': {
+					light: 'hsl(var(--gentle-breeze-light))',
+					DEFAULT: 'hsl(var(--gentle-breeze))',
+					deep: 'hsl(var(--gentle-breeze-deep))'
+				},
+				'lavender': {
+					light: 'hsl(var(--lavender-light))',
+					DEFAULT: 'hsl(var(--lavender))',
+					deep: 'hsl(var(--lavender-deep))'
+				},
+				'peachy': {
+					light: 'hsl(var(--peachy-light))',
+					DEFAULT: 'hsl(var(--peachy))',
+					deep: 'hsl(var(--peachy-deep))'
+				},
+				'cappuccino': {
+					light: 'hsl(var(--cappuccino-light))',
+					DEFAULT: 'hsl(var(--cappuccino))',
+					deep: 'hsl(var(--cappuccino-deep))'
+				},
+				'champagne': 'hsl(var(--champagne))',
+				'vintage-pink': 'hsl(var(--vintage-pink))',
+				'vintage-brown': 'hsl(var(--vintage-brown))',
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -62,6 +86,21 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				}
+			},
+			backgroundImage: {
+				'gradient-hero': 'var(--gradient-hero)',
+				'gradient-warm': 'var(--gradient-warm)',
+				'gradient-calm': 'var(--gradient-calm)',
+				'gradient-cozy': 'var(--gradient-cozy)'
+			},
+			boxShadow: {
+				'soft': 'var(--shadow-soft)',
+				'warm': 'var(--shadow-warm)',
+				'floating': 'var(--shadow-floating)'
+			},
+			transitionTimingFunction: {
+				'gentle': 'var(--transition-gentle)',
+				'bounce': 'var(--transition-bounce)'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
