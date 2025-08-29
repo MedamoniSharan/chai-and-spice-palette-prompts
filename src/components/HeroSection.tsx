@@ -16,21 +16,21 @@ const HeroSection = () => {
                 Aromatic Bliss
               </h1>
               <h2 className="text-2xl lg:text-3xl text-foreground/80 font-light">
-                Authentic Chai & Curated Spices
+                Chai Mastery & Spice Consulting Services
               </h2>
             </div>
             
             <p className="text-lg text-foreground/70 max-w-lg mx-auto lg:mx-0 leading-relaxed">
-              Discover the warmth of traditional chai blends and premium spices sourced from around the world. 
-              Each cup tells a story, each spice carries heritage.
+              We craft bespoke chai experiences and provide premium spice consulting for restaurants, 
+              cafes, and food brands. From recipe development to staff training, we bring authentic flavors to life.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Button variant="hero" size="lg" className="text-lg px-8 py-6">
-                Explore Our Blends
+                Our Services
               </Button>
               <Button variant="gentle" size="lg" className="text-lg px-8 py-6">
-                Shop Spices
+                Get Consultation
               </Button>
             </div>
           </div>

@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ShoppingBag, Menu, X } from "lucide-react";
+import { Phone, Menu, X } from "lucide-react";
 import { useState } from "react";
 
 const Navigation = () => {
@@ -7,9 +7,9 @@ const Navigation = () => {
 
   const navItems = [
     { name: "Home", href: "#" },
-    { name: "Shop", href: "#shop" },
     { name: "About", href: "#about" },
-    { name: "Blends", href: "#blends" },
+    { name: "Services", href: "#services" },
+    { name: "Portfolio", href: "#portfolio" },
     { name: "Contact", href: "#contact" }
   ];
 
@@ -44,18 +44,15 @@ const Navigation = () => {
           {/* Right Side Actions */}
           <div className="flex items-center space-x-4">
             <Button variant="ghost" size="icon" className="relative">
-              <ShoppingBag className="w-5 h-5" />
-              <span className="absolute -top-1 -right-1 w-5 h-5 bg-peachy text-peachy-deep text-xs rounded-full flex items-center justify-center font-bold">
-                3
-              </span>
+              <Phone className="w-5 h-5" />
             </Button>
             
             <div className="hidden md:flex items-center space-x-2">
               <Button variant="gentle" size="sm">
-                Sign In
+                Get Quote
               </Button>
               <Button variant="warm" size="sm">
-                Join Us
+                Contact Us
               </Button>
             </div>
 
@@ -86,10 +83,10 @@ const Navigation = () => {
             ))}
             <div className="flex flex-col space-y-2 pt-4">
               <Button variant="gentle" size="sm">
-                Sign In
+                Get Quote
               </Button>
               <Button variant="warm" size="sm">
-                Join Us
+                Contact Us
               </Button>
             </div>
           </div>

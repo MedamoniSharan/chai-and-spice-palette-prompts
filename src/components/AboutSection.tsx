@@ -9,12 +9,12 @@ const AboutSection = () => {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">
-            Our Story of Flavor & Tradition
+            Our Expertise & Mission
           </h2>
           <p className="text-lg text-foreground/70 leading-relaxed">
-            Born from a passion for authentic flavors and a love for bringing people together, 
-            our journey began in a small neighborhood where the aroma of spices filled the air 
-            and chai was more than just a beverage—it was a moment of connection.
+            We are chai masters and spice consultants dedicated to elevating culinary experiences. 
+            From helping restaurants develop signature blends to training baristas in authentic preparation methods, 
+            we bring the art and science of spices to businesses worldwide.
           </p>
         </div>
 
@@ -24,32 +24,32 @@ const AboutSection = () => {
           <div className="space-y-8">
             <div className="space-y-6">
               <h3 className="text-2xl font-semibold text-cappuccino-deep">
-                Blending Heritage with Innovation
+                Professional Chai & Spice Consulting
               </h3>
               <p className="text-foreground/70 leading-relaxed">
-                We carefully curate each blend, honoring traditional recipes while embracing creative twists 
-                that surprise and delight. Our chai masters work with small-batch producers to ensure every 
-                cup delivers the perfect balance of warmth, spice, and comfort.
+                With over 15 years of experience in the culinary industry, we provide comprehensive consulting 
+                services to restaurants, cafes, and food brands. Our expertise spans recipe development, 
+                sourcing strategies, quality control, and staff training programs.
               </p>
               
               <p className="text-foreground/70 leading-relaxed">
-                From the bustling spice markets of Mumbai to the serene tea gardens of Darjeeling, 
-                we source only the finest, non-GMO ingredients that tell stories of their origins.
+                We work closely with businesses to create signature chai blends and spice programs 
+                that reflect their brand identity while maintaining authentic flavor profiles that customers love.
               </p>
             </div>
 
             <div className="grid grid-cols-3 gap-6 py-8">
               <div className="text-center">
-                <div className="text-3xl font-bold text-lavender-deep mb-2">50+</div>
-                <div className="text-sm text-foreground/60">Unique Blends</div>
+                <div className="text-3xl font-bold text-lavender-deep mb-2">200+</div>
+                <div className="text-sm text-foreground/60">Clients Served</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-peachy-deep mb-2">100%</div>
-                <div className="text-sm text-foreground/60">Natural Ingredients</div>
+                <div className="text-3xl font-bold text-peachy-deep mb-2">15+</div>
+                <div className="text-sm text-foreground/60">Years Experience</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-cappuccino-deep mb-2">15</div>
-                <div className="text-sm text-foreground/60">Countries Sourced</div>
+                <div className="text-3xl font-bold text-cappuccino-deep mb-2">50+</div>
+                <div className="text-sm text-foreground/60">Custom Blends Created</div>
               </div>
             </div>
           </div>
@@ -84,17 +84,17 @@ const AboutSection = () => {
           {/* Values Content */}
           <div className="order-1 lg:order-2 space-y-8">
             <h3 className="text-2xl font-semibold text-lavender-deep">
-              Our Core Values
+              Why Choose Our Services
             </h3>
             
             <div className="space-y-6">
               <div className="flex gap-4">
                 <div className="w-2 h-2 bg-peachy-deep rounded-full mt-2 flex-shrink-0"></div>
                 <div>
-                  <h4 className="font-semibold text-foreground mb-2">Sustainability First</h4>
+                  <h4 className="font-semibold text-foreground mb-2">Industry Expertise</h4>
                   <p className="text-foreground/70 text-sm">
-                    We partner with farmers who practice sustainable agriculture, ensuring our planet 
-                    thrives for generations to come.
+                    Deep knowledge of spice markets, sourcing networks, and culinary applications 
+                    gained through years of working with top restaurants and food brands.
                   </p>
                 </div>
               </div>
@@ -102,10 +102,10 @@ const AboutSection = () => {
               <div className="flex gap-4">
                 <div className="w-2 h-2 bg-lavender-deep rounded-full mt-2 flex-shrink-0"></div>
                 <div>
-                  <h4 className="font-semibold text-foreground mb-2">Quality Without Compromise</h4>
+                  <h4 className="font-semibold text-foreground mb-2">Custom Solutions</h4>
                   <p className="text-foreground/70 text-sm">
-                    Every spice, every leaf is hand-selected for its exceptional quality, 
-                    ensuring an extraordinary experience in every cup.
+                    Every business is unique. We develop tailored spice programs and chai menus 
+                    that align perfectly with your brand vision and target market.
                   </p>
                 </div>
               </div>
@@ -113,10 +113,10 @@ const AboutSection = () => {
               <div className="flex gap-4">
                 <div className="w-2 h-2 bg-gentle-breeze-deep rounded-full mt-2 flex-shrink-0"></div>
                 <div>
-                  <h4 className="font-semibold text-foreground mb-2">Community Connection</h4>
+                  <h4 className="font-semibold text-foreground mb-2">Ongoing Support</h4>
                   <p className="text-foreground/70 text-sm">
-                    From our neighborhood cafe to your home, we believe in creating moments 
-                    that bring people together through shared flavors and stories.
+                    Our relationship doesn't end with implementation. We provide ongoing training, 
+                    quality monitoring, and continuous improvement recommendations.
                   </p>
                 </div>
               </div>
