@@ -1,93 +1,77 @@
-import { Button } from "@/components/ui/button";
-import { Phone, Menu, X } from "lucide-react";
 import { useState } from "react";
+import { Menu, X, Coffee } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const Navigation = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
-    { name: "Home", href: "#" },
+    { name: "Home", href: "#home" },
     { name: "About", href: "#about" },
-    { name: "Services", href: "#services" },
-    { name: "Portfolio", href: "#portfolio" },
-    { name: "Contact", href: "#contact" }
+    { name: "Our Story", href: "#story" },
+    { name: "Menu", href: "#menu" },
+    { name: "Growth Plan", href: "#growth" },
+    { name: "Collaborate", href: "#collaborate" },
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border/50">
-      <div className="container mx-auto px-4 py-4">
-        <div className="flex items-center justify-between">
-          
+    <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-orange-100 z-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-gradient-warm rounded-full flex items-center justify-center shadow-soft">
-              <div className="w-6 h-6 bg-card rounded-full opacity-90"></div>
-            </div>
-            <div className="font-bold text-xl text-foreground">
-              Aromatic<span className="text-lavender-deep">Bliss</span>
-            </div>
+            <Coffee className="h-8 w-8 text-orange-600" />
+            <span className="text-2xl font-bold text-gray-900">Dr. Chaai</span>
           </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
-              <a 
+              <a
                 key={item.name}
                 href={item.href}
-                className="text-foreground/70 hover:text-foreground transition-gentle font-medium"
+                className="text-gray-700 hover:text-orange-600 transition-colors duration-200 font-medium"
               >
                 {item.name}
               </a>
             ))}
+            <Button className="bg-orange-600 hover:bg-orange-700 text-white">
+              Get Started
+            </Button>
           </div>
 
-          {/* Right Side Actions */}
-          <div className="flex items-center space-x-4">
-            <Button variant="ghost" size="icon" className="relative">
-              <Phone className="w-5 h-5" />
-            </Button>
-            
-            <div className="hidden md:flex items-center space-x-2">
-              <Button variant="gentle" size="sm">
-                Get Quote
-              </Button>
-              <Button variant="warm" size="sm">
-                Contact Us
-              </Button>
-            </div>
-
-            {/* Mobile Menu Button */}
-            <Button 
-              variant="ghost" 
-              size="icon" 
-              className="md:hidden"
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
+          {/* Mobile menu button */}
+          <div className="md:hidden">
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={() => setIsOpen(!isOpen)}
+              className="text-gray-700"
             >
-              {isMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+              {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </Button>
           </div>
         </div>
 
-        {/* Mobile Menu */}
-        {isMenuOpen && (
-          <div className="md:hidden mt-4 pb-4 space-y-4 border-t border-border/50 pt-4">
-            {navItems.map((item) => (
-              <a 
-                key={item.name}
-                href={item.href}
-                className="block text-foreground/70 hover:text-foreground transition-gentle font-medium py-2"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                {item.name}
-              </a>
-            ))}
-            <div className="flex flex-col space-y-2 pt-4">
-              <Button variant="gentle" size="sm">
-                Get Quote
-              </Button>
-              <Button variant="warm" size="sm">
-                Contact Us
-              </Button>
+        {/* Mobile Navigation */}
+        {isOpen && (
+          <div className="md:hidden">
+            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t border-orange-100">
+              {navItems.map((item) => (
+                <a
+                  key={item.name}
+                  href={item.href}
+                  className="block px-3 py-2 text-gray-700 hover:text-orange-600 transition-colors duration-200 font-medium"
+                  onClick={() => setIsOpen(false)}
+                >
+                  {item.name}
+                </a>
+              ))}
+              <div className="px-3 py-2">
+                <Button className="w-full bg-orange-600 hover:bg-orange-700 text-white">
+                  Get Started
+                </Button>
+              </div>
             </div>
           </div>
         )}

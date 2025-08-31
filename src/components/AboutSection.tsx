@@ -1,62 +1,39 @@
+import { Button } from "@/components/ui/button";
+import { Coffee, Utensils, Leaf, Heart } from "lucide-react";
 import spicesImage from "@/assets/spices-collection.jpg";
-import teaCeremonyImage from "@/assets/tea-ceremony.jpg";
 
 const AboutSection = () => {
   return (
-    <section className="py-20 bg-gradient-cozy">
-      <div className="container mx-auto px-4">
+    <section id="about" className="py-20 bg-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">
-            Our Expertise & Mission
+        <div className="text-center mb-16">
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">
+            Welcome to Dr. Chaai
           </h2>
-          <p className="text-lg text-foreground/70 leading-relaxed">
-            We are chai masters and spice consultants dedicated to elevating culinary experiences. 
-            From helping restaurants develop signature blends to training baristas in authentic preparation methods, 
-            we bring the art and science of spices to businesses worldwide.
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            Whether you're craving a classic French omelet to start your morning, a savory paneer tikka wrap for lunch, 
+            or a slice of buttery scone paired with clotted cream and jam, our thoughtfully curated menu is designed to delight every palate.
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
-          
-          {/* About Content */}
+        {/* Main Content with Image */}
+        <div className="grid lg:grid-cols-2 gap-16 items-center mb-16">
           <div className="space-y-8">
-            <div className="space-y-6">
-              <h3 className="text-2xl font-semibold text-cappuccino-deep">
-                Professional Chai & Spice Consulting
-              </h3>
-              <p className="text-foreground/70 leading-relaxed">
-                With over 15 years of experience in the culinary industry, we provide comprehensive consulting 
-                services to restaurants, cafes, and food brands. Our expertise spans recipe development, 
-                sourcing strategies, quality control, and staff training programs.
-              </p>
-              
-              <p className="text-foreground/70 leading-relaxed">
-                We work closely with businesses to create signature chai blends and spice programs 
-                that reflect their brand identity while maintaining authentic flavor profiles that customers love.
-              </p>
-            </div>
-
-            <div className="grid grid-cols-3 gap-6 py-8">
-              <div className="text-center">
-                <div className="text-3xl font-bold text-lavender-deep mb-2">200+</div>
-                <div className="text-sm text-foreground/60">Clients Served</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-peachy-deep mb-2">15+</div>
-                <div className="text-sm text-foreground/60">Years Experience</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-cappuccino-deep mb-2">50+</div>
-                <div className="text-sm text-foreground/60">Custom Blends Created</div>
-              </div>
-            </div>
+            <h3 className="text-2xl font-bold text-gray-900 mb-6">Our Story & Mission</h3>
+            <p className="text-lg text-gray-700 leading-relaxed">
+              Dr. Chaai was born out of a simple idea — that chai is more than just a drink, 
+              it's an emotion shared across every street, home, and heart in India.
+            </p>
+            <p className="text-lg text-gray-700 leading-relaxed">
+              We've taken the nostalgic essence of India's favorite beverage and infused it with 
+              contemporary design, consistent quality, affordable pricing, and a café format that's inclusive and inviting.
+            </p>
           </div>
 
-          {/* About Image */}
           <div className="relative">
-            <div className="rounded-3xl overflow-hidden shadow-floating">
+            <div className="rounded-3xl overflow-hidden shadow-2xl">
               <img 
                 src={spicesImage} 
                 alt="Vintage spice collection with colorful aromatic spices"
@@ -64,67 +41,42 @@ const AboutSection = () => {
               />
             </div>
           </div>
-
         </div>
 
-        {/* Values Section */}
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+          <div className="text-center p-6 rounded-lg bg-orange-50">
+            <Coffee className="w-12 h-12 text-orange-600 mx-auto mb-4" />
+            <h3 className="text-xl font-semibold text-gray-900 mb-2">Signature Chai</h3>
+            <p className="text-gray-600">Authentic Indian chai blends with modern twists</p>
+          </div>
           
-          {/* Values Image */}
-          <div className="order-2 lg:order-1 relative">
-            <div className="rounded-3xl overflow-hidden shadow-warm">
-              <img 
-                src={teaCeremonyImage} 
-                alt="Elegant tea ceremony with steaming teapot and spices"
-                className="w-full h-auto object-cover"
-              />
-            </div>
+          <div className="text-center p-6 rounded-lg bg-amber-50">
+            <Utensils className="w-12 h-12 text-amber-600 mx-auto mb-4" />
+            <h3 className="text-xl font-semibold text-gray-900 mb-2">Fresh Food</h3>
+            <p className="text-gray-600">From French omelets to Indian street food</p>
           </div>
-
-          {/* Values Content */}
-          <div className="order-1 lg:order-2 space-y-8">
-            <h3 className="text-2xl font-semibold text-lavender-deep">
-              Why Choose Our Services
-            </h3>
-            
-            <div className="space-y-6">
-              <div className="flex gap-4">
-                <div className="w-2 h-2 bg-peachy-deep rounded-full mt-2 flex-shrink-0"></div>
-                <div>
-                  <h4 className="font-semibold text-foreground mb-2">Industry Expertise</h4>
-                  <p className="text-foreground/70 text-sm">
-                    Deep knowledge of spice markets, sourcing networks, and culinary applications 
-                    gained through years of working with top restaurants and food brands.
-                  </p>
-                </div>
-              </div>
-              
-              <div className="flex gap-4">
-                <div className="w-2 h-2 bg-lavender-deep rounded-full mt-2 flex-shrink-0"></div>
-                <div>
-                  <h4 className="font-semibold text-foreground mb-2">Custom Solutions</h4>
-                  <p className="text-foreground/70 text-sm">
-                    Every business is unique. We develop tailored spice programs and chai menus 
-                    that align perfectly with your brand vision and target market.
-                  </p>
-                </div>
-              </div>
-              
-              <div className="flex gap-4">
-                <div className="w-2 h-2 bg-gentle-breeze-deep rounded-full mt-2 flex-shrink-0"></div>
-                <div>
-                  <h4 className="font-semibold text-foreground mb-2">Ongoing Support</h4>
-                  <p className="text-foreground/70 text-sm">
-                    Our relationship doesn't end with implementation. We provide ongoing training, 
-                    quality monitoring, and continuous improvement recommendations.
-                  </p>
-                </div>
-              </div>
-            </div>
+          
+          <div className="text-center p-6 rounded-lg bg-green-50">
+            <Leaf className="w-12 h-12 text-green-600 mx-auto mb-4" />
+            <h3 className="text-xl font-semibold text-gray-900 mb-2">Herbal Infusions</h3>
+            <p className="text-gray-600">Health-focused teas and wellness blends</p>
           </div>
-
+          
+          <div className="text-center p-6 rounded-lg bg-red-50">
+            <Heart className="w-12 h-12 text-red-600 mx-auto mb-4" />
+            <h3 className="text-xl font-semibold text-gray-900 mb-2">Community</h3>
+            <p className="text-gray-600">A welcoming space to connect and relax</p>
+          </div>
         </div>
 
+        <div className="text-center">
+          <p className="text-lg text-gray-700 leading-relaxed max-w-4xl mx-auto mb-8">
+            Join us for a moment of calm, connect with fellow tea lovers, and discover the simple joy of sipping and sharing at Dr. Chaai.
+          </p>
+          <Button className="bg-orange-600 hover:bg-orange-700 text-white">
+            View Full Menu
+          </Button>
+        </div>
       </div>
     </section>
   );
